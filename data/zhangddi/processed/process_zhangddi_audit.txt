@@ -1,0 +1,35 @@
+ZhangDDI processing audit
+Source files: ZhangDDI_train.csv, ZhangDDI_valid.csv, ZhangDDI_test.csv
+Source rows: 113972
+Rows by source file: train=76518, valid=18727, test=18727
+Input label counts: negative=68252, positive=45720
+Missing ID/SMILES records: 0
+Invalid label records: 0
+Invalid SMILES occurrences: 0
+Pair SMILES assignments absent from drug_list_zhang.csv vocabulary: 0
+Unique unordered DrugBank-ID pairs: 95245
+Repeated rows removed: 18727
+Conflicting unordered ID pairs: 0
+Records in conflicting pairs (all excluded): 0
+Unique rows after conflict exclusion and deduplication: 95245
+Remaining negative samples: 54990
+Remaining positive samples: 40255
+Observed IDs with multiple raw SMILES: 0
+Observed IDs with multiple canonical SMILES: 0
+Observed canonical SMILES shared by multiple IDs: 0
+Reference canonical SMILES shared by multiple IDs: 0
+IDs in drug_list_zhang.csv: 544
+Exact SMILES vocabulary entries in drug_list_zhang.csv: 544
+IDs in drug_list_zhang.csv with multiple canonical SMILES: 0
+IDs inconsistent with drug_list_zhang.csv: 0
+Final CSV rows: 95245
+Final negative samples: 54990
+Final positive samples: 40255
+Final duplicate unordered canonical SMILES pairs: 0
+Final conflicting label pairs: 0
+Final missing/invalid records: 0
+Normalized pair order violations: 0
+Final unique SMILES mapping rows: 544
+Dataset output: D:\code\code\TRACE\data\zhangddi\processed\ZhangDDI.csv
+SMILES mapping output: D:\code\code\TRACE\data\zhangddi\processed\drug_list_zhang.csv
+Audit log: D:\code\code\TRACE\data\zhangddi\processed\process_zhangddi_audit.txt

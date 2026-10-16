@@ -1,0 +1,51 @@
+ChChMiner processing audit
+Source files: ChChMiner_train.csv, ChChMiner_valid.csv, ChChMiner_test.csv
+Source rows: 33669
+Rows by source file: train=23435, valid=5121, test=5113
+Input label counts: negative=12183, positive=21486
+Missing ID/SMILES records: 0
+Invalid label records: 0
+Invalid SMILES occurrences: 0
+Pair SMILES assignments absent from drug_list_miner.csv vocabulary: 0
+Unique unordered DrugBank-ID pairs: 32500
+ID-pair label conflicts: 541
+Unique canonical unordered SMILES pairs: 32500
+Repeated rows across canonical SMILES pairs: 1169
+Repeated rows within conflicting pairs: 554
+Repeated rows among non-conflicting pairs: 615
+Conflicting unordered ID pairs: 541
+Records in conflicting pairs (all excluded): 1095
+Unique rows after conflict exclusion and deduplication: 31959
+Remaining negative samples: 11418
+Remaining positive samples: 20541
+Unique canonical molecules in source pairs: 959
+Unique canonical molecules retained after conflict removal: 959
+Unique canonical molecules appearing in conflicted pairs: 266
+Observed IDs with multiple raw SMILES: 363
+Observed IDs with multiple canonical SMILES: 363
+One-to-many IDs with multiple variants within one file: 363
+One-to-many IDs with multiple variants per file: train=363, valid=332, test=300
+One-to-many IDs with variants only across different files: 0
+One-to-many IDs present in multiple files: 363
+Observed canonical SMILES shared by multiple IDs: 363
+Reference canonical SMILES shared by multiple IDs: 0
+IDs in drug_list_miner.csv: 997
+Exact SMILES vocabulary entries in drug_list_miner.csv: 997
+IDs in drug_list_miner.csv with multiple canonical SMILES: 0
+IDs inconsistent with drug_list_miner.csv: 363
+Distinct non-reference canonical ID/SMILES combinations: 23918
+Occurrences of non-reference ID/SMILES assignments: 24366
+First 20 one-to-many IDs (sorted): DB00136, DB00153, DB00158, DB00162, DB00175, DB00177, DB00178, DB00180, DB00181, DB00186, DB00188, DB00193, DB00195, DB00196, DB00198, DB00199, DB00204, DB00205, DB00207, DB00209
+Detailed canonical SMILES counts by file: D:\code\code\TRACE\data\chchminer\processed\chchminer_id_smiles_variants_top20.csv
+DrugBank ID policy: audit only; preserve pair-file SMILES and do not reconstruct by ID
+Pre-write validation: passed
+Final CSV written: yes
+Final CSV rows: 31959
+Final negative samples: 11418
+Final positive samples: 20541
+Final unique canonical unordered pairs: 31959
+Final normalized pair order violations: 0
+Final unique SMILES mapping rows: 959
+Dataset output: D:\code\code\TRACE\data\chchminer\processed\ChChMiner.csv
+SMILES mapping output: D:\code\code\TRACE\data\chchminer\processed\drug_list_miner.csv
+Audit log: D:\code\code\TRACE\data\chchminer\processed\process_chchminer_audit.txt
